@@ -12,6 +12,7 @@ import { ToDoComponent } from './to-do/to-do.component';
 import { ViewQuotesComponent } from './view-quotes/view-quotes.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 const myRoutes:Routes = [
 
@@ -86,7 +87,8 @@ const myRoutes:Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoutes)
+    RouterModule.forRoot(myRoutes),
+    HttpClientModule
     
   ],
   providers: [],
