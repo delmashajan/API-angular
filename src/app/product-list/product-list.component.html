@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4" *ngFor="let i of product.products">
+
+                      <div class="card"  >
+                        
+                        <img height="300px"   src="{{i.thumbnail}}" class="card-img-top" alt="...">
+                    <div style="height: 100px;overflow-y:hidden;" class="card-body">
+
+                        <h5 class="card-title">{{i.title}}</h5>
+                        <p class="card-title">{{i.description}}</p>
+                    </div>
+                    <div class="card-body">
+                            <p class="card-text">Price : {{i.price}}</p>
+                            <p class="card-text">Discount Percentage : {{i.discountPercentage}}</p>
+
+                            <p class="card-text">Rating : {{i.rating}}</p>
+                            <p class="card-text">Stock : {{i.stock}}</p>
+                            <p class="card-text">Brand : {{i.brand}}</p>
+                            <p class="card-text">Category : {{i.category}}</p>
+                          </div>
+
+                          
+
+                          
+                        </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
